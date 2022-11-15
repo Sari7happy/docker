@@ -1,6 +1,3 @@
-FROM ruby:2.7
+FROM php:8.1-fpm
 
-RUN mkdir /var/www
-COPY main.rb /var/www
-
-CMD ["ruby","/var/www/main.rb"]
+COPY php.ini /usr/local/etc/php/
